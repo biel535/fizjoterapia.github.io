@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacje</title>
+ <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="styles-informacje.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logoSection">
+    <img class="logo" src="../icons/logo kolor.png">
+    <span class="serviceName">Tomasz Biel Fizjoterapia</span>
+    </div>
+    <div class="menuSection">
+    <ul>
+      <li><a href="../index.html">STRONA GŁÓWNA</a></li>
+      <li><a href="../index.html#about">O MNIE</a></li>
+      <li><a href="../index.html#opinions">OPINIE</a></li>
+      <li><a href="../index.html#prices" >CENNIK</a></li>
+      <li><a href="../index.html#contact">KONTAKT</a></li>
+      <li><a href="informacje/informacje.html">INFORMACJE</a></li>
+    </ul>
+    </div>
+    <div class="socialMediaSection">
+    <a href="https://www.facebook.com/bieltomasz"><img class="socialIcons" src="../icons/facebook-app-symbol (1).png"></a>
+    <a href="https://www.instagram.com/biel_tomasz_/"><img class="socialIcons" src="../icons/instagram (3).png"></a>
+  
+</div>
+</header>
+<section id="first-section">
+  <div class="first-section">
+    <div class="first-section-text">
+      <h1 class="h1-first-section">Jak <span class="section-title-span">przygotować się</span> na <span class="section-title-span">pierwszą </span>wizytę?</h1>
+      <h2>St<span class="section-title-span">r</span>ój</h2>
+      <p>By terapia była optymalnie skuteczna często potrzebne jest przebadanie całego ciała. <br>
+          W tym celu wymagane jest rozebranie się do bielizny, dobrze więc przygotować komfortowy strój. <br>
+          Jeśli jest to zbyt dyskomfrotowe dla pacjenta/pacjentki proszę o ubranie spodenek sportowych/krótkich legginsów </br>
+          z jaką najmniejszym szwem/gumką oraz sportowy stanik.
+      </p>
+      <h2><span class="section-title-span">Dokumentacja</span> medyczna</h2>
+      <p>Jeśli posiadają państwo badania obrazowe takie jak: USG, RTG, MRI lub opinie innych specjalistów medycznych to proszę je przynieść.<br>
+        Do przeprowadzenia wizyty nie jest wymagane zrobienie badań obrazowych.
+      </p>
+      <h2>Zastanów<span class="section-title-span"> się</span></h2>
+      <p>Jak zaczeły się dolegliwości, jak się rozwijały? Czy jest jakis ruch albo aktywność która je wywołuje? <br>
+        Czy pora dnia ma znaczenie? Czy towarzyszą Panu/Pani dolegliwości spoza układu ruchu np. refluks, astma, endometrioza?<br>
+        Czy przebył Pan/Pani jakieś urazy (złamania, zwichnięcia, skręcenia...)?
+      </p>
+     </div>
+   </section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      let header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    
+  </script>
+</body>
+</html>

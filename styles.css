@@ -1,0 +1,437 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, roboto, arial;
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
+
+}
+ header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top:  5px;
+  margin-bottom: 5px;
+
+  background-color: none;
+  font-size: 15px;
+  color: white;
+}
+
+/* Header sticky */
+header.sticky{
+  padding: 5px 50px;
+  margin: 0;
+  background: white;
+}
+header.sticky ul li a{
+color: #fbab16;
+}
+header.sticky span{
+  color: #fbab16;
+}
+/* end header sticky */
+
+.logoSection{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.serviceName{
+margin-left: 20px;
+font-size: 25px;
+}
+
+.menuSection {
+  position: relative;
+}
+.menuSection ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+.menuSection ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.menuSection ul li::after{
+ content: '';
+ height: 3px;
+ width: 0;
+ background-color: #fbab16;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.menuSection ul li:hover::after{
+  width: 100%;
+}
+.socialIcons{
+margin-left: 20px;
+}
+
+/* content sections */
+
+#first-section .first-section{
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(pictures/ja-wakacje.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.87;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+ 
+#first-section .first-section-text{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+#first-section .h1-first-section {
+  color: white;
+  font-size: 3rem;
+}
+.s-button{
+  width: 400px;
+  height: 60px;
+  padding: 16px 16px;
+  top: 40px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fbab16;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.s-button .buttonSpan{
+  background: #fbab16;
+  width: 0;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.s-button:hover .buttonSpan{
+ width:100%;
+}
+.s-button:hover{
+  border: none;
+}
+h1{
+  margin: 25px 25px 25px 25px;
+  color: rgb(92, 92, 92);
+}
+h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 30px;
+  color: rgb(92, 92, 92);
+}
+a{
+  text-decoration: none;
+}
+.container{
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-title{
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: rgb(92, 92, 92);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.section-title-span{
+  color: #fbab16;
+}
+
+#opinions{}
+#opinions .opinions{
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#opinions .opinion-top p{
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300px;
+  letter-spacing: .05rem;
+  color: rgb(92, 92, 92);
+}
+#opinions .opinion-top h2{
+  color: black;
+}
+#opinions .opinion-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#opinions .opinion-item{
+  flex-basis: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url(pictures/wspolpraca1.jpg) ;
+  background-size: cover;
+  margin: 15px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+#opinions .opinion-item::after{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: .4;
+  z-index: -1;
+}
+#opinions .opinion-bottom .icon{
+  height: 30px;
+  width: 300px;  
+  margin-bottom: 10px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  
+  
+
+}
+#opinions .opinion-bottom .icon img{
+  height: 8rem;
+  width: 15rem;
+  object-fit: cover;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#opinions .opinion-item h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#opinions .opinion-item p{
+  color: white;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin-bottom: 25px;
+  margin-top: 3vh;
+}
+#sign .sign{
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#sign .sign-text p{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+#sign .znany{
+  box-shadow: 3px 3px 20px black; 
+  cursor: pointer;
+}
+/* About me section */
+#about .about{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 20px 20px;
+}
+#about .col-left{
+  width: 530px;
+  height: 530px;
+  }
+#about .col-left .about-img{
+  position: relative;
+  }
+#about .col-left .about-img::after{
+  content: '';
+  position: absolute;
+  left: -33px;
+  top: 19px;
+  height: 100%;
+  width: 100%;
+  border: 7px solid #fbab16;
+  z-index: -1;
+}
+
+ #about .col-right{
+  width: 100%;
+
+ } 
+ #about .col-right h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 30px;
+ }
+#about .col-right p{
+  margin-bottom: 40px;
+  font-size: 21px;
+}
+
+/* End about me section */
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+#contact .contact-items{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 3px black;
+	transition: 0.3s ease box-shadow;
+ 
+}
+#contact .contact-item:hover {
+    box-shadow: 5px 5px 20px black;
+    
+  }
+#contact .address:hover {
+  cursor: pointer;
+}
+#contact .icon {
+    width: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#contact .contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+ #contact .contact-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
+/*prices section*/
+#prices .prices{
+  flex-direction: row;
+  justify-content: space-evenly;
+}  
+#prices .prices-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#prices .prices-top p{
+  color:  rgb(92, 92, 92);
+  font-size: 1.4rem;
+}
+#prices .prices-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* end prices section */
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer */
+/* Media Query for tablet */
+@media only screen and (min-width: 768px){
+  h1.section-title{
+    font-size: 6rem;
+  }
+  #opinions .opinion-bottom .opinion-item{
+    flex-basis: 40%;
+   margin: 2.5%;
+  }
+}
+
+/* End Media Query for tablet */
+
